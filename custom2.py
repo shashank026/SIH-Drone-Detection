@@ -4,10 +4,7 @@ import cv2
 from time import time
 
 
-class MugDetection:
-    """
-    Class implements Yolo5 model to make inferences on a youtube video using Opencv2.
-    """
+class DroneDetection:
 
     def __init__(self, capture_index, model_name):
         """
@@ -116,5 +113,5 @@ class MugDetection:
 
 
 # Create a new object and execute.
-detector = MugDetection(capture_index=0, model_name='/Users/shashanksaraswat/yolov5/best.pt')
+detector = DroneDetection(capture_index=0, model_name='/Users/shashanksaraswat/yolov5/best.pt')
 detector()
